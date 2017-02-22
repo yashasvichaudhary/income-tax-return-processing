@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package org;
 
 import java.io.IOException;
@@ -17,10 +14,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import javax.servlet.http.HttpSession;
 
-/**
- *
- *
- */
+
 @WebServlet(name = "Login", urlPatterns = {"/login"})
 public class Login extends HttpServlet {
 
