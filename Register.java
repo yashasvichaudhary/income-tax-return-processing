@@ -1,4 +1,4 @@
-
+//registration page for the user 
 package org;
 import DB.SMSSender;
 import DB.SimpleEmail;
@@ -65,7 +65,7 @@ public class Register extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        HttpSession session = request.getSession(true);
+        HttpSession session = request.getSession(true);// It will return the current session.
         PrintWriter out = response.getWriter();
         response.setContentType("text/html");
         ServletConfig config = getServletConfig();
@@ -81,7 +81,6 @@ public class Register extends HttpServlet {
         fname = request.getParameter("txtfname");
         lname = request.getParameter("txtlname");
         username = request.getParameter("txtusername");
-        dob = request.getParameter("txtdob");
         email = request.getParameter("txtemail");
         contno = request.getParameter("txtcontno");
         location = request.getParameter("txtlocation");
